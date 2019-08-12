@@ -33,6 +33,10 @@ dependencies {
 
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:1.5.2.RELEASE'
 	compile("org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE")
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.7.RELEASE'
+
 }
 
 dependencyManagement {

@@ -8,6 +8,7 @@ security:
 eureka:
   instance:
     #eureka服务端的实例名称
+#    hostname: dev-eureka-server
     hostname: 127.0.0.1
   client:
     # false表示不向注册中心注册自己
@@ -20,3 +21,12 @@ eureka:
 
 credit:
   chain: test
+
+
+spring:
+  security:
+    basic:
+      enabled: true               # 开启基于HTTP basic的认证
+    user:
+      name: root                  # 配置登录的账号是user
+      password: root       # 配置登录的密码是password123
